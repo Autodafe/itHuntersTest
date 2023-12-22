@@ -1,0 +1,1 @@
+console.log(5),document.addEventListener("DOMContentLoaded",(function(){const e=document.querySelector(".loader-container"),n=document.querySelector(".content-wrapper");window.addEventListener("load",(function(){e.style.display="none",n.style.display="flex"}))}));
