@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Global call service</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/proximanovaregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/proximanovabold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <script defer src="js/loader.js"></script>
+</head>
+
+<body class="page-body">
+
+  <div class="loader-container">
+    <div class="loader"></div>
+  </div>
+
+  <div class="content-wrapper">
+    <header class="main-header no-js">
+      <a class="main-header__logo" aria-label="Переход на главную страницу." href="index.html">
+        <img class="main-header__logo-image" src="img/svg-images/logo.svg" width="48" height="48"
+          alt="Логотип Social WNS.">
+      </a>
+      <button class="main-header__toggle burger-button" type="button">
+        <span class="visually-hidden">Открыть/закрыть меню.</span>
+        <span class="burger-button__line"></span>
+        <span class="burger-button__line"></span>
+        <span class="burger-button__line"></span>
+      </button>
+      <!-- navigation -->
+      <nav class="main-header__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--current" href="#">
+              Games
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">
+              Contact Us
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">
+              Terms of Use
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#" target="_blank">
+              About
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="main-header__button button registration-button button--transparent"> <span
+          class="main-header__button-text"></span>
+        sing up</button>
+      <button class="main-header__button button button--purple">Log in</button>
+    </header>
+
+    <!-- Main -->
+    <main class="main-container">
+      <!-- hero block -->
+      <h1 class="visually-hidden">Game Center.</h1>
+      <section class="hero">
+        <h2 class="hero__text">awesome html5 games <br> - NO MONEY! <br></h2>
+        <p class="hero__description">Your perfect place to get some fun and excitement</p>
+        <div class="hero__button-wrapper">
+          <button class="hero__button main-header__button button"> <span class="hero__account-button-text">Log
+              in</span></button>
+          <button class="hero__button button button--purple"><span
+              class="hero__account-button-text">Play</span></button>
+        </div>
+
+        <section class="hero__account">
+          <h3 class="hero__account-text">Create a free account now</h3>
+          <ul class="hero__account-list">
+            <li class="hero__account-item">1000+ Games available</li>
+            <li class="hero__account-item">New game Every week</li>
+            <li class="hero__account-item">Support our users 24/7</li>
+          </ul>
+          <form class="hero__account-form" action="#" method="get">
+            <label class="visually-hidden" for="hero-input-name">Firstname</label>
+            <input class="hero__account-input" type="text" name="hero-input-name" id="hero-input-name"
+              placeholder="Firstname" required>
+
+            <label class="visually-hidden" for="hero-input-lastname">Lastname</label>
+            <input class="hero__account-input" type="text" name="hero-input-lastname" id="hero-input-lastname"
+              placeholder="Lastname" required>
+
+            <label class="visually-hidden" for="hero-input-email">Email Address</label>
+            <input class="hero__account-input" type="email" name="hero-input-email" id="hero-input-email"
+              placeholder="Email Address" required>
+
+            <button class="hero__account-button hero__button button button--purple" type="submit"><span
+                class="hero__account-button-text">Join Now</span></button>
+            <div>
+              <label class="hero__account-label">
+                <input class="hero__account-input-checkbox" type="checkbox" name="hero-input-checkbox" required>
+              </label>
+              <span>I Accept The <a class="hero__account-checkbox-link" href="#">Privacy Policy</a></span>
+            </div>
+          </form>
+        </section>
+      </section>
+      <section class="games">
+        <div class="games__header">
+          <div class="games__text-wrapper">
+            <h2 class="games__title">Our Games</h2>
+            <p class="games__description">Get Virtual Welcome bonus after Sign Up</p>
+          </div>
+          <a class="games__link" href="#">All games</a>
+        </div>
+
+        <ul class="games__list">
+          <li class="games__item">
+            <a class="games__item-link" href="#">
+              <img class="games__item-image" src="img/content/gametype_1.jpg" width="160" height="120"
+                alt="Double Jackpot.">
+              <h3 class="games__item-title games__item-title--current">Double Jackpot</h3>
+              <p class="games__item-description">NetentGames</p>
+            </a>
+          </li>
+          <li class="games__item">
+            <a class="games__item-link" href="#">
+              <img class="games__item-image" src="img/content/gametype_2.jpg" width="160" height="120"
+                alt="All Aboard: Dynam....">
+              <h3 class="games__item-title">All Aboard: Dynam...</h3>
+              <p class="games__item-description">RushGameStudio</p>
+            </a>
+          </li>
+          <li class="games__item">
+            <a class="games__item-link" href="#">
+              <img class="games__item-image" src="img/content/gametype_3.jpg" width="160" height="120"
+                alt="Book Of Tombs.">
+              <h3 class="games__item-title">Book Of Tombs</h3>
+              <p class="games__item-description">NetentGames</p>
+            </a>
+          </li>
+          <li class="games__item">
+            <img class="games__item-image games__item-image--inside" src="img/content/gametype_4.jpeg" width="248"
+              height="160" alt="Dynamite Riches Megaways.">
+            <h3 class="games__item-title games__item-title--inside">Dynamite Riches <br> Megaways</h3>
+            <p class="games__item-description games__item-description--inside">Miners revealed a gain of €46,672 for
+              Sandra M.! You too, dynamite the reels of the Red Tiger Daily Jackpot machines</p>
+            <button class="games__item-button games__item-button--inside button"><span>Play now</span></button>
+          </li>
+          <li class="games__item">
+            <img class="games__item-image games__item-image--inside" src="img/content/gametype_5.jpeg" width="248"
+              height="160" alt="Gator Gold Deluxe Gigablox.">
+            <h3 class="games__item-title games__item-title--inside">Gator Gold Deluxe <br>Gigablox </h3>
+            <p class="games__item-description games__item-description--inside">These swamps conceal many dangers but
+              especially precious treasures. Will you be able to find them?</p>
+            <button class="games__item-button games__item-button--inside button"><span>Play now</span></button>
+          </li>
+          <li class="games__item">
+            <a class="games__item-link" href="#">
+              <img class="games__item-image" src="img/content/gametype_6.jpg" width="160" height="120"
+                alt="Rudolph’s Ride.">
+              <h3 class="games__item-title">Rudolph’s Ride</h3>
+              <p class="games__item-description">NetentGames</p>
+            </a>
+          </li>
+          <li class="games__item">
+            <a class="games__item-link" href="#">
+              <img class="games__item-image" src="img/content/gametype_7.jpg" width="160" height="120"
+                alt="Starburst XXXtreme.">
+              <h3 class="games__item-title">Starburst XXXtreme</h3>
+              <p class="games__item-description">StarBurst Inc.</p>
+            </a>
+          </li>
+          <li class="games__item">
+            <a class="games__item-link" href="#">
+              <img class="games__item-image" src="img/content/gametype_8.jpg" width="160" height="120"
+                alt="Black Diamond.">
+              <h3 class="games__item-title">Black Diamond</h3>
+              <p class="games__item-description">RushGameStudio</p>
+            </a>
+          </li>
+          <li class="games__item games__item--big">
+            <img class="games__item-image" src="img/content/gametype_9.jpeg" width="512" height="120"
+              alt="Our deals are not to be missed.">
+            <div class="games__item-title-wrapper">
+              <h3 class="games__item-title">Our deals are not to be missed</h3>
+              <p class="games__item-description">Discover a wide range of weekly promotions</p>
+            </div>
+            <button class="games__item-button button"><span>Read more</span></button>
+          </li>
+        </ul>
+        <p class="games__attention">* We don't offer opportunities to play for real money. Our games are free demo. All
+          games were invented for entertainment purposes only and do not offer real money prizes.</p>
+
+        <section class="game__contact contact">
+          <div class="contact__wrapper">
+            <h3 class="contact__title">Contact us</h3>
+            <p class="contact__description">If you have some questions, send us a message</p>
+
+            <form class="contact__form" action="#" method="post">
+              <label class="visually-hidden" for="contact__form-input-name">Firstname</label>
+              <input class="contact__form-input" type="text" name="contact__form-input-name"
+                id="contact__form-input-name" placeholder="Firstname" required>
+
+              <label class="visually-hidden" for="contact__form-input-email">Email Address</label>
+              <input class="contact__form-input" type="email" name="contact__form-input-email"
+                id="contact__form-input-email" placeholder="Email Address" required>
+
+              <label class="visually-hidden" for="contact__form-textarea">Your message here...</label>
+              <textarea class="contact__form-textarea" name="contact__form-textarea" id="contact__form-textarea"
+                placeholder="Your message here..." required></textarea>
+              <div>
+                <label class="contact__form-label">
+                  <!-- исправить стили и класс (сделать отдельным блоком в будущем) -->
+                  <input class="hero__account-input-checkbox" type="checkbox" name="contact-input-checkbox" required>
+                </label>
+                <span>I Accept The <a class="hero__account-checkbox-link" href="#">Privacy Policy</a></span>
+              </div>
+              <button class="contact__form-button button button--purple" type="submit"><span
+                  class="hero__account-button-text">Send</span></button>
+            </form>
+          </div>
+          <button class="contact__button-bonus" type="button">
+            <img class="contact__button-image" src="img/content/tower.png" width="475" height="475" alt="">
+          </button>
+        </section>
+      </section>
+    </main>
+    <footer class="footer">
+      <ul class="footer__info-list">
+        <li class="footer__info-item"><a class="footer__info-link" href="#">Disclaimer</a></li>
+        <li class="footer__info-item"><a class="footer__info-link" href="#">Privacy Policy</a></li>
+        <li class="footer__info-item"><a class="footer__info-link" href="#">Terms of Conditions</a></li>
+      </ul>
+      <p class="footer__description">This site does not provide any form of online gambling and delivers information for
+        entertainment and research
+        purposes only. The games listed by Topwinningslots are intended for adult audience entertainment (underage
+        visitors are restricted) and do not offer real money or prizes. Practicing online free games does not imply
+        future success at 'real money' gambling.</p>
+      <div class="footer__copyright-wrapper">
+        <p class="footer__copyright-text">2022 | © Lorem Inc. All Rights Reserved</p>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--twitter" href="#"></a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--facebook" href="#"></a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--instagram" href="#"></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <!-- modal -->
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-search">
+      <h2 class="modal__title title-big">Регистрация</h2>
+      <button class="modal__close-button" type="button">
+        <span class="visually-hidden">Закрыть.</span>
+      </button>
+      <section class="modal__content">
+        <h3 class="visually-hidden">Форма попапа для регистрации.</h3>
+        <form class="modal-form" action="#" method="post">
+
+          <!-- login form -->
+          <div class="modal-field-container">
+            <label class="modal-form__label" for="logform">
+              <span class="modal-form__description">Create Login:</span>
+            </label>
+            <div class="modal-input-container">
+              <input class="modal-form__input" id="logform" placeholder="Login" type="text" name="login-name">
+            </div>
+          </div>
+
+          <!-- Passwor form -->
+          <div class="modal-field-container">
+            <label class="modal-form__label" for="passform">
+              <span class="modal-form__description">Create Password:</span>
+            </label>
+            <div class="modal-input-container">
+              <input class="modal-form__input" id="passform" placeholder="Create Password" type="password"
+                name="pass-name">
+            </div>
+          </div>
+          <button class="modal__button-search button button--purple" type="submit"><span>Registration</span></button>
+        </form>
+      </section>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

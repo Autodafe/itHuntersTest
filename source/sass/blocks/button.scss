@@ -1,0 +1,46 @@
+.button {
+  display: block;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: normal;
+  font-family: $ff-proximanova;
+  color: $color-white;
+  text-transform: capitalize;
+  text-decoration: none;
+
+  background-color: $medium-sea-green;
+  border: none;
+  cursor: pointer;
+
+  &--purple {
+    background: linear-gradient(265deg, #4870FF -5.06%, #FA00FF 94.87%);
+    box-shadow: 0 4px 16px 0 rgba(138, 97, 255, 0.6);
+  }
+
+  &--transparent {
+    background-color: transparent;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
+
+    opacity: 0.7;
+  }
+
+  &:focus-visible {
+    outline: 3px $medium-sea-green solid;
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    color: $color-white;
+
+    background-color: $color-whisper-standart;
+    cursor: default;
+  }
+}
